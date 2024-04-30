@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* /////// shared class /////////// */
+p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #d9e5ec;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 10px 24px;
+  border-radius: 24px;
+  letter-spacing: 1.5px;
+  width: fit-content;
+  border: none;
+}
+.btn-green {
+  background-color: #4db290;
+  color: white;
+}
+.btn-white {
+  background-color: white;
+  border: 2px solid #56caad;
+  color: #4db290;
+}
+.btn-transparent {
+  border: 3px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.bg-blue {
+  background-color: #243e55;
+}
+.bg-green {
+  background-color: #4eb290;
+}
+.text-green {
+  color: #4eb290;
+}
+.text-gray {
+  color: #929192;
+}
+.text-blue {
+  color: #223d4f;
+}
+.text-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: 40px;
+  padding: 20px 0;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  height: 60px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+.menu div {
+  height: 2px;
+  background-color: black;
+  width: 20px;
+}
+nav h1 {
+  color: #e1e0e0;
+  cursor: pointer;
+}
+header {
+  height: 100vh;
+}
+.header {
+  display: flex;
+  height: calc(100% - 60px);
+  background-image: url("./images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+.header-content h3 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #223d4f;
+  letter-spacing: 2px;
+}
+.header-content h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: #223d4f;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.header-content p {
+  font-weight: 600;
+  font-size: 14px;
+  font-style: italic;
+  color: #223d4f;
+  line-height: 24px;
+  max-width: 450px;
+  margin: auto;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.features,
+.benefits,
+.skills-section,
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 80%;
+  margin: auto;
+}
+.features {
+  margin: 60px auto;
+}
+.feature-box {
+  width: 100%;
+  border-radius: 12px;
+  color: #fffeff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.feature-box p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.feature-box img {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: white;
+}
+.visualize-box {
+  background-color: #243e55;
+}
+.create-box {
+  background-color: #4eb290;
+}
+.grow-box {
+  background-color: #243e54;
+}
+.feature-box span {
+  font-size: 40px;
+  font-weight: 700;
+}
+.arrow-white {
+  color: white;
+}
+.arrow-green {
+  color: #4eb290;
+}
+
+.welcome-section {
+  background-color: #243e55;
+  padding: 60px 0;
+}
+.welcome-section > div {
+  color: white;
+  width: 100%;
+  border-left: 20px solid #4db290;
+  border-right: 20px solid #4db290;
+}
+.welcome-content {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.welcome-content h1 {
+  font-size: 32px;
+}
+
+.benefit-section{
+  padding: 20px 0 ;
+}
+.benefit-section > h1 {
+  margin-bottom: 20px;
+}
+.benefit-box {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 24px 20px;
+}
+.benefit-box p {
+  margin-top: 5px;
+}
+.benefit-box h1 {
+  font-size: 32px;
+}
+
+.coaching-section {
+  margin: 50px 0;
+  background: linear-gradient(to bottom, #2e5776e5, #2e5776e5),
+    url("./images/coaching.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coaching-section p {
+  max-width: 530px;
+  margin: 10px 0 30px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+.skills-section {
+  gap: 50px;
+  align-items: center;
+  margin: 70px auto;
+}
+.tech-img {
+  width: 100%;
+}
+.skill-content .btn {
+  margin-top: 30px;
+}
+.skill {
+  color: #545454;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px 0 16px;
+}
+.text-secondary {
+  color: #545454;
+  font-weight: 500;
+  font-size: 14px;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.course-section {
+  background: linear-gradient(to bottom, #0b2b44e5, #11344ee5),
+    url("./images/vector.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 10%;
+}
+.course-container {
+  width: 60%;
+}
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 100px;
+}
+.stats-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 40px 0 16px;
+}
+.stats-desc{
+  grid-column: span 3;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  grid-column: span 3;
+}
+.stats .section-title{
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+
+.team-section{
+  margin: 40px auto ;
+}
+
+.team-container{
+  gap:40px;
+  margin-top: 25px;
+}
+.team-container .position{
+  font-weight: 700;
+  margin-top: 10px ;
+  margin-bottom: 20px;
+}
+.team-container p{
+  padding: 0 10px;
+  font-weight: 500;
+}
+.team-container 
+.team-img{
+  width: 200px;
+  height: 200px;
+  object-position: center;
+  margin: auto;
+  background-color: #e5e5e5;
+  padding: 15px 30px 0 30px;
+  border-radius: 14px;
+  margin-bottom: 8px;
+}
+.icons{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.service-section{
+  display: grid;
+  grid-template-columns:  repeat(7,1fr);
+  padding: 50px 10%;
+  align-items: center;
+  gap: 150px;
+  margin-top: 70px;
+}
+
+.service-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-column: span 4;
+}
+.service-content form{
+  margin: 14px 0;
+}
+form .email{
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  width: 220px;
+}
+.service-content a {
+  color: white;
+  font-size: 14px;
+}
+.service-content h2{
+  font-size: 30px;
+}
+.service-container{
+  grid-column: span 3;
+}
+.service li{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+footer{
+  background-color: #323232;
+  padding: 30px 0;
+}
