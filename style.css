@@ -188,6 +188,10 @@ header {
   color: #4eb290;
 }
 
+button, .submit-btn, .icons i{
+  cursor: pointer;
+}
+
 .welcome-section {
   background-color: #243e55;
   padding: 60px 0;
